@@ -1,0 +1,94 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-2"></div> -->
+    </div>
+  </div>
+</div>
+<div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10" style="border: 1px solid rgb(240, 237, 237)">
+        <div class="py-2 col-md-3">
+          <div class="btn btn-success py-2" (click)="addNew()">
+            Add New Restaurant
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Outlet</th>
+              <th scope="col">Delete</th>
+              <th scope="col">Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of restoData">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.address }}</td>
+              <td>{{ item.outlets }}</td>
+              <td>
+                <i
+                  (click)="delResto(item.id)"
+                  class="fa fa-trash"
+                  style="font-size: 30px; color: rgb(199, 17, 17)"
+                ></i>
+              </td>
+              <td>
+                <a class="nav-link active" routerLink="/edit/{{ item.id }}"
+                  ><i
+                    class="fa fa-edit"
+                    style="font-size: 30px; color: rgb(38, 15, 248)"
+                  ></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center my-5">
+  <h1>Drag and Drop Data</h1>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="drag-drop">
+        <div
+          class="custom-dropzone"
+          ngx-dropzone
+          [accept]="'image/*'"
+          (change)="onSelect($event)"
+        >
+          <ngx-dropzone-label>
+            <div >
+              <h2>Drag and Drop</h2>
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iste.</P>
+            </div>
+          </ngx-dropzone-label>
+          <ngx-dropzone-image-preview
+            ngProjectAs="ngx-dropzone-preview"
+            *ngFor="let f of files"
+            [file]="f"
+            [removable]="true"
+            (removed)="onRemove(f)"
+          >
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+          </ngx-dropzone-image-preview>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+

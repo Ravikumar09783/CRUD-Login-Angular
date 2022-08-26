@@ -9,9 +9,14 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
+import { TableComponent } from './components/table/table.component';
+import { EditTableComponent } from './components/edit-table/edit-table.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddRestoComponent } from './components/add-resto/add-resto.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
-  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, ContactComponent, ServicesComponent, AboutComponent],
-  imports: [CommonModule, AdminRoutingModule],
+  declarations: [AdminDashboardComponent, HeaderComponent, FooterComponent, HomeComponent, ContactComponent, ServicesComponent, AboutComponent, TableComponent, EditTableComponent, AddRestoComponent],
+  imports: [CommonModule, AdminRoutingModule,ReactiveFormsModule,NgxDropzoneModule],
 })
 export class AdminModule {}

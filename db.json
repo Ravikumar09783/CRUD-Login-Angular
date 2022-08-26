@@ -1,0 +1,89 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "resto": [
+    {
+      "name": "Burgur Singh",
+      "address": "Chandigarh",
+      "outlets": "15",
+      "id": 1
+    },
+    {
+      "name": "Panna Sweets",
+      "address": "Manimajra",
+      "outlets": 2,
+      "food": "Veg",
+      "id": 2
+    },
+    {
+      "name": "Sagar Ratna",
+      "outlets": "4",
+      "address": "Panchkula",
+      "id": 3
+    },
+    {
+      "name": "Pot Belly",
+      "outlets": "2",
+      "address": "New Delhi",
+      "id": 4
+    },
+    {
+      "name": "Burgrill",
+      "address": "sec-8 Panchkula",
+      "outlets": "15",
+      "id": 5
+    },
+    {
+      "name": "Burgur King",
+      "address": "Panchkula",
+      "outlets": 3,
+      "id": 6
+    },
+    {
+      "name": "Gopal's Sweerts",
+      "address": "Mohali",
+      "outlets": 4,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test",
+      "id": 1
+    },
+    {
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "fkdshhjsdf",
+      "email": "q",
+      "password": "q",
+      "id": 3
+    },
+    {
+      "name": "jfhfsjkdhfk",
+      "email": "atul",
+      "password": "atul",
+      "id": 4
+    },
+    {
+      "name": "abc",
+      "email": "w",
+      "password": "w",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
